@@ -1,9 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.logger = Logger.new(STDOUT)
-  config.logger.level = Logger.const_get((ENV["LOG_LEVEL"] || "INFO").upcase)
-
+config.logger = Logger.new(STDOUT) 
+config.log_level = :info
 
   # Code is not reloaded between requests.
   config.cache_classes = true
