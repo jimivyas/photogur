@@ -21,6 +21,6 @@ test:
   database: db/test.sqlite3
 
 production:
-	adapter: postgresqul
-	database: photogur
-	host: localhost
+  adapter: postgresql
+  database: photogur
+  host: localhost
